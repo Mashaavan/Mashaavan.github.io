@@ -36,14 +36,7 @@
 	clear: both;
 	display: table;
  }
- 
- /* .menu {
-	width: 25%;
- }
- .content {
-	width: 75%;
- } */
- 
+
  .topmenu {
 	list-style-type: none;
 	margin: 0;
@@ -103,11 +96,9 @@
 	height: 150px;
 	overflow-x: hidden;
 	overflow-y: visible;
- }
- 
- /* for demo001.html */
- 
- .first-letter-is-big {
+}
+
+.first-letter-is-big {
 	float: left;
 	width: 0.7em;
 	font-size: 400%;
@@ -146,22 +137,22 @@
 	}
  
 	.half {
-	  width: 50%; /* 100% / 2 */
+	  width: 50%; 
 	}
  
 	.one-third {
-	  width: 33.33%; /* 100% / 3 */
+	  width: 33.33%; 
 	}
  
 	.one-fourth {
-	  width: 25%; /* 100% / 4 */
+	  width: 25%; 
 	}
  
  .three-fourth {
-	  width: 75%; /* 100% / 4 * 3 */
+	  width: 75%; 
 	}
  
 	.two-thirds {
-	  width: 66.66%; /* 100% / 3 * 2 */
+	  width: 66.66%; 
 	}
 }
