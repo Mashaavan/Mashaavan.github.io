@@ -1,69 +1,81 @@
 html {
 	box-sizing: border-box;
- }
- 
- *,
- *:before,
- *:after {
-	box-sizing: inherit;
- }
- 
- .row::before,
- .row::after {
-	content: "";
-	clear: both;
-	display: table;
- }
- 
- .one,
- .half,
- .one-third,
- .one-fourth,
- .two-thirds {
+}
+
+.row {
+	display: flex;
+}
+
+.one,
+.half,
+.one-third,
+.one-fourth,
+.two-thirds {
 	width: 100%;
- }
- 
- @media only screen and (min-width: 800px) {
+}
+
+@media only screen and (min-width: 800px) {
 	.one {
-	  width: 100%;
+	flex-basis: 100%;
 	}
- 
+
 	.half {
-	  width: 50%; /* 100% / 2 */
+	  flex-basis: 50%; /* 100% / 2 */
 	}
- 
+
 	.one-third {
-	  width: 33.33%; /* 100% / 3 */
+	  flex-basis: 33.33%; /* 100% / 3 */
 	}
- 
+
 	.one-fourth {
-	  width: 25%; /* 100% / 4 */
+	  flex-basis: 25%; /* 100% / 4 */
 	}
- 
+
 	.two-thirds {
-	  width: 66.66%; /* 100% / 3 * 2 */
+	  flex-basis: 66.66%; /* 100% / 3 * 2 */
 	}
- 
-	.column {
-	  float: left;
-	}
- }
- 
- body {
+}
+
+body {
 	background: #000;
 	color: #f7f7f7;
 	font-size: 1.3em;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	padding: 0 10px;
- }
- 
- h1 {
+}
+
+h1 {
 	text-align: center;
- }
- 
- .column {
+}
+
+.column {
 	border: 1px solid #666;
 	background: #343436;
 	padding: 15px;
 	margin-bottom: 10px;
- }
+}
+
+@media only screen and (max-width: 800px) {
+	.row {
+	flex-wrap: wrap;
+	}
+	.one {
+	flex-basis: 100%;
+	}
+
+	.half {
+	flex-basis: 100%;
+	}
+
+	.one-third {
+	flex-basis: 100%;
+	}
+
+	.one-fourth {
+	flex-basis: 100%;
+	}
+
+	.two-thirds {
+	flex-basis: 100%;
+	}
+}
