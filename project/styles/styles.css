@@ -58,30 +58,193 @@ list-style: none;
 .about {
 	position: relative;
 	margin-top: 5%;
+	margin-bottom: 35px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
 }
+
 .about__desk {
 	width: 50%;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 20px;
 }
-section {
-	position: relative;
-	padding: 80px 0;
+.add__service {
+	padding: 40px 0;
+	background-color: rgb(51, 50, 50);
+	color: white;
 }
-.price {
-	height: 100vh;
-	min-height: 600px;
-}
-.price__title {
+.service__title {
 	margin-bottom: 50px;
 	text-align: center;
 	font: inherit;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	
+}
+.conteiner__service {
+	position: relative;
+	padding: 0 20px;
+}
+.add__service .container__service {
+	margin: 0 auto;
+	max-width: 750px;
+	display: flex;
+	justify-content: space-between;
+}
+.text_service {
+	position: relative;
+	flex: 0 1 60%;
+	padding-bottom: 65px;
+}
+.container__service .service_title2 {
+	margin-bottom: 25px;
+}
+.service_title2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: lighter;
+}
+.container__service .service_info {
+	margin-bottom: 0;
+}
+.service_info {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: normal;
+}
+.container__service .btn {
+	right: auto;
+	bottom: 0;
+}
+.service_btn {
+	position: absolute;
+	left: 0;
+	margin: 0 auto;
+}
+.btn {
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 1px;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #a8a8a8;
+}
+.text_service>a {
+	color: white;
+	text-decoration: none;
+}
+.text_service>a:hover {
+	color: white;
+	background-color: gray;
+}
+.img_service {
+	flex: 0 1 40%;
+	position: relative;
+	min-height: 200px;
+}
+.img_service img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.text_service>img {
+	vertical-align: middle;
+	border: 0;
+}
+.contacts {
+	padding: 80px 0;
+	position: relative;
+}
+.container__contacts {
+	position: relative;
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.title {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	position: relative;
+	font-size: 45px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;	
+	font-weight: lighter;
+}
+.title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	height: 1px;
+	max-width: 400px;
+	background-color: grey;
+}
+.contacts__subtitle {
+	margin-bottom: 50px;
+}
+.subtitle {
+	font-size: 18px;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 28px;
+	font-weight: 400;
+	color: rgb(56, 55, 55);
+}
+.contacts__form {
+	display: flex;
+}
+.contacts__info {
+	padding-right: 40px;
+	border-right: 1px solid gray;
+	flex: 0 0 250px;
+}
+ul {
+	list-style: none;
+}
+.contacts__info li:first-child {
+	margin-bottom: 20px;
+}
+.contacts__info li {
+	padding-left: 40px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 30px;
+}
+.contacts__info li:first-child:before {
+	background-image: url(../image/icon-call.png);
+}
+.contacts__info li:last-child:before {
+	background-image: url(../image/email.png);
+}
+.contacts__info li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.contacts_link {
+	display: block;
+	text-decoration: none;
+}
+a{
+	color: black;
+	text-decoration: none;
 }
