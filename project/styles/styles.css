@@ -40,13 +40,22 @@ list-style: none;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.main-text {
+.text {
 	position: relative;
 	text-align: center;
 	margin-top: 15%;
 	font-size: 40px;
 }
-.about__title {
+.text h1 {
+	margin-top: 80px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 60px;
+	font-weight: lighter;	
+}
+h1 {
 	margin-top: 80px;
 	position: relative;
 	text-align: center;
@@ -167,7 +176,7 @@ list-style: none;
 	padding: 0 20px;
 	margin: 0 auto;
 }
-.title {
+h2 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	position: relative;
 	font-size: 45px;
@@ -176,7 +185,7 @@ list-style: none;
 	text-transform: uppercase;	
 	font-weight: lighter;
 }
-.title::after {
+.contacts__title::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -188,10 +197,7 @@ list-style: none;
 	max-width: 400px;
 	background-color: grey;
 }
-.contacts__subtitle {
-	margin-bottom: 50px;
-}
-.subtitle {
+p {
 	font-size: 18px;
 	max-width: 600px;
 	margin: 0 auto;
@@ -199,6 +205,7 @@ list-style: none;
 	line-height: 28px;
 	font-weight: 400;
 	color: rgb(56, 55, 55);
+	margin-bottom: 50px;
 }
 .contacts__form {
 	display: flex;
