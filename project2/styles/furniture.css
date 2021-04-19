@@ -11,16 +11,18 @@ a{
 	color: rgb(99, 97, 97);
 	text-decoration: none;
 }
+.furniture {
+	position: relative;
+	background-color: #fcf8f7;
+}
 
 .header {
-	border: 1px solid red;
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
 	background: white;
 	color: rgb(99, 97, 97);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	position: fixed;
 }
 .header-item {
 	display: flex;
@@ -41,8 +43,54 @@ font-weight: lighter;
 .header-item ul{
 	display: flex;
 }
+
 .title-content {
-	
-	background-color: hotpink;
+	display: flex;	
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 180px;
+}
+.title>h1 {
+	font-size: 60px;
+	text-align: end;
+	padding: 0 90px 30px 150px;
+}
+.title>p {
+	font-size: 20px;
+	text-align: end;
+	padding: 0 90px 30px 150px;
+	font-weight: lighter;
 }
 
+.radius-picture {
+	display: flex;
+	align-items: center;
+}
+.radius-picture>img {
+	border-radius: 0 80px 0 0;
+}
+
+.description {
+	display: flex;
+	margin: 100px 150px;
+	background-color: rgb(224, 224, 224);
+}
+
+.description-text {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.description-text>p {
+	padding-left: 60px;
+	font-size: 20px;
+	font-weight: lighter;
+}
+.catalogue {
+	display: 
+	
+}
