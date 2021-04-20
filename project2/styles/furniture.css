@@ -90,7 +90,11 @@ font-weight: lighter;
 	font-size: 20px;
 	font-weight: lighter;
 }
-.catalogue {
-	display: 
-	
+.catalogue-picture {
+	display: grid;
+	grid-gap: 3rem;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 0.1fr 0.1fr 0.1fr;
+	padding: 0;
+	margin: 0;
 }
