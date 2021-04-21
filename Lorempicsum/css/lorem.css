@@ -39,6 +39,7 @@ p{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	line-height: 1.10;
 	font-size: 15px;
+	line-height: 1.5;
 }
 p .small {
 	display: inline-block;
@@ -88,8 +89,15 @@ p .small {
 	flex-direction: row-reverse;
 }
 .picture {
+	border-style: solid;
+	border-width: 0;
+	background-color: #fff;
 	border-radius: 10px;
-	box-shadow: 5px 5px 5px rgba(173, 171, 171, 0.781);
+	box-shadow: 5px 5px 5px rgba(173, 171, 171, 0.8);
+}
+.picture:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 .container a {
 	text-decoration: none;
@@ -113,7 +121,8 @@ a {
 	color: rgb(201, 201, 201);
 }
 .lorem-logo {
-	position: absolute;
-	left: 250px;
-	top: 125px;
+	display: inline;
+	margin-right: 15px;
+	width: 42px;
+	height: 42px;
 }
