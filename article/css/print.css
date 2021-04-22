@@ -1,0 +1,54 @@
+@media print and (orientation: portrait) {
+	header, footer {
+		display: none;
+	}
+	.main-container {
+		max-width: 100%;
+	}
+	img {
+		display: none;
+	}
+
+	h1, h2 {
+		display: block;
+		text-align: center;
+	}
+	
+	p {
+		width: 100%;
+		font-size: 20px;
+		padding-bottom: 25px;
+	}
+	.main-container__green-text p {
+		display: none;
+	}
+}
+
+@media print and (orientation: landscape) {
+	header, footer {
+		display: none;
+	}
+	.main-container {
+		max-width: 100%;
+	}
+	img {
+		display: none;
+	}
+
+	h1, h2 {
+		font-style: 20px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		column-span: all;
+	}
+	
+	p {
+		column-count: 2;
+		column-gap: 20px;
+		font-size: 20px;
+		padding-bottom: 25px;
+	}
+	.main-container__green-text p {
+		display: none;
+	}
+}
