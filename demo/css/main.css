@@ -236,13 +236,17 @@ transition:.5s ease-out;
 	opacity: 1;
 }
 .slider-container {
-	padding-top: 57px;
+	padding-top: 40px;
 	padding-left: 70px;
 	width: 95%;
+	height: 60vh;
 	overflow: hidden;
 	position: relative;
 }
-
+.fotorama__img {
+	width: 100vw;
+	height: 60vh;
+}
 .about-container {
 	padding-left: 70px;
 	display: flex;
