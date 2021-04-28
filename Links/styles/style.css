@@ -1,7 +1,9 @@
 body {
-	background-color: rgb(240, 215, 240);
+	background-color: #ffe3cd;
 }
 h1 {
+	font-style: italic;
+	font-size: 40px;
 	text-align: center;
 }
 ul {
