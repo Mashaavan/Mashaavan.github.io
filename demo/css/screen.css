@@ -57,8 +57,12 @@
 	.slider-container {
 		padding-top: 10px;
 	padding-left: 35px;
-		width: 90vw;
-		height: 20vh;
+		width: 100%;
+		height: 70vh;
+	}
+	.slider-container__item img {
+		width: 100vw;
+		height: 70vh;
 	}
 	.about-container {
 		display: flex;
@@ -69,11 +73,39 @@
 	.about-container_text {
 		float: center;
 		font-weight: lighter;
-		line-height: 1.3;
 		width: 70vw;
 		text-align: center;
 	}
 	.information-container_img img {
 width: 100vw;
 	}
+
+	#information-container p {
+		padding: 10px;
+		width: 60vw;
+	}
+	.img-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		.about-container__column-img {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			padding:0
+		}
+		.about-container__column-img img {
+			width: 100vw;
+			height: 40vh;
+		}
+		
+		.column-img__padding {
+			padding-bottom: 45px;
+		}
+		.about-container__one img {
+			padding-top: 50px;
+			width: 100vw;
+			height: 70vh;
+		}
 }
