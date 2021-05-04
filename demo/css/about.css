@@ -235,66 +235,64 @@ transition:.5s ease-out;
 	background-color: rgb(240, 121, 41);
 	opacity: 1;
 }
-.slider-container {
-	padding-top: 40px;
-	padding-left: 70px;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+section {
+	display: flex;
+	padding:0;
 	position: relative;
 }
-.slider-container__img img {
-	max-width: 40rem;
-	width: 100%;
+.page__about .about__title {
+	margin-bottom: 30px;
 }
-
-.about-container {
-	padding-left: 70px;
+.about__title {
+	margin-bottom: 30px;
+}
+.title {
+	margin-top: 60px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 35px;
+	font-weight: lighter;
+}
+.title:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	border-radius: 2px;
+	height: 1px;
+	max-width: 400px;
+	background-color:rgba(255, 255, 255, 0.2);
+}
+.about__body {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
-
-.about-container_text {
-	padding: 0 100px;
-	line-height: 1.5;
+.about-desk__title {
+	text-align: center;
+}
+.about__foto {
+	padding-left: 90px;
+	margin-right: 20px;
+}
+.about__foto img {
 	width: 30vw;
+	height: 45vh;
+	object-fit: cover;
 }
-
-.information-container_img {
-	padding: 40px 40px;
+.text {
+	width: 60vw;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: normal;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
 }
-
-#information-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-#information-container p {
-	padding: 30px;
-	width: 40vw;
-}
-.img-container {
-display: flex;
-justify-content: space-around;
-}
-.about-container__column-img {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	padding-left: 130px;
-}
-.about-container__column-img img {
-	width: 30vw;
-	height: 42vh;
-}
-
-.column-img__padding {
-	padding-bottom: 45px;
-}
-.about-container__one img {
-	width: 40vw;
-	height: 90vh;
+.about-desk__text {
+	background-color: rgba(255, 255, 255, 0.1);
 }
 footer {
 	margin-top: 50px;

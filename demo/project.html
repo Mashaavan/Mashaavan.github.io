@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./JQuery/jquery-2.2.4.min.js"></script>
+    <script src="./JS/min.wow.js"></script>
+    <link rel="stylesheet" href="./css/animate.css" />
+
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/screen.css" media="screen" />
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <title>Сайт</title>
+  </head>
+  <body>
+    <header class="home-header">
+      <div class="top-line">
+        <a href="main.html" class="logo">
+          <span class="logo__img-wrapper">
+            <img src="./images/logomin.png" alt="logo" class="logo__images" />
+          </span>
+          <span class="logo__text">Furniture</span>
+        </a>
+        <div class="top-line__decoration"></div>
+        <div class="top-line__contacts">
+          Телефон: <span class="top-line__numbers">444-74-25</span>
+          <span class="top-line__seporator"></span>
+          <span class="top-line__adress"
+            >Адрес:<span class="top-line__text">Московская, 60</span>
+          </span>
+        </div>
+        <div class="top-line__decoration"></div>
+        <a class="menu-link" href="#">
+          <span></span>
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="project.html">Проекты</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+
+        <script>
+          $(document).ready(function () {
+            var link = $(".menu-link");
+            var link_active = $(".menu-link_active");
+            var menu = $(".menu");
+
+            link.click(function () {
+              link.toggleClass("menu-link_active");
+              menu.toggleClass("menu_active");
+            });
+            link_active.click(function () {
+              link.removeClass("menu-link_active");
+            });
+          });
+        </script>
+      </div>
+      <div class="home-header__content">
+        <aside class="home-aside">
+          <div class="home-aside__soc">
+            <div class="home-aside__soc-items">
+              <a href="#" class="soc-item" target="_blank">
+                <img src="./images/instagram-brands.svg" alt="Instagram"
+              /></a>
+
+              <a href="#" class="soc-item" target="_blank">
+                <img src="./images/whatsapp-square-brands.svg" alt="Whatsapp"
+              /></a>
+
+              <a href="#" class="soc-item" target="_blank">
+                <img src="./images/facebook-brands.svg" alt="Facebook"
+              /></a>
+
+              <a href="#" class="soc-item" target="_blank">
+                <img src="./images/telegram-plane-brands.svg" alt="Telegram"
+              /></a>
+            </div>
+          </div>
+          <div class="home-aside__share-icon"></div>
+        </aside>
+
+
+
+
+
+
+
+
+		  <footer>
+			<div class="footer__container">
+			  <div class="footer__menu">
+				 <ul class="footer__nav">
+					<li class="footer__menu__title">Инфо</li>
+					<li><a href="main.html" class="footer__link">Главная</a></li>
+					<li><a href="about.html" class="footer__link">О нас</a></li>
+					<li><a href="project.html" class="footer__link">Проекты</a></li>
+					<li><a href="contacts.html" class="footer__link">Контакты</a></li>
+				 </ul>
+				 <ul class="footer__social">
+					<li class="footer__menu__title">Мы в соцсетях</li>
+						<div class="footer__soc">
+						  <div class="footer__soc-items">
+							 <a href="#" class="footer-soc-item" target="_blank">
+								<img src="./images/instagram-brands.svg" alt="Instagram"
+							 /></a>
+		  
+							 <a href="#" class="footer-soc-item" target="_blank">
+								<img src="./images/whatsapp-square-brands.svg" alt="Whatsapp"
+							 /></a>
+		  
+							 <a href="#" class="footer-soc-item" target="_blank">
+								<img src="./images/facebook-brands.svg" alt="Facebook"
+							 /></a>
+		  
+							 <a href="#" class="footer-soc-item" target="_blank">
+								<img src="./images/telegram-plane-brands.svg" alt="Telegram"
+							 /></a>
+						  </div>
+						</div>
+						<div class="home-aside__share-icon"></div>
+					 </aside>
+				 </ul>
+			  </div>
+			</div>
+		 </footer>
