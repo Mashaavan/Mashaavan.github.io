@@ -236,13 +236,50 @@ transition:.5s ease-out;
 	opacity: 1;
 }
 
+.project {
+	padding: 10px 0 20px 5px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+grid-gap: 15px 50px;
+justify-content: center;
+}
 
+.title {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.title:after {
+	content: '';
+	margin: 0 auto;
+	display: block;
+	border-radius: 2px;
+	height: 1px;
+	max-width: 400px;
+	background-color: #c5c5c5;
+}
 
+.project__card img {
+	width: 25vw;
+	height: 50vh;
+}
 
+.project__card img:hover {
+	transform: scale(1.2);
+	opacity: .70;
+	transition: .5s ease-out;
+}
 
-
-
-
+p {
+	text-align: center;
+	font-size: 15px;
+	font-weight: lighter;
+	color: gray;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+}
 
 footer {
 	margin-top: 50px;

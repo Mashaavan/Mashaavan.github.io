@@ -165,6 +165,34 @@ width: 100vw;
 		.about-desk__text {
 			background-color: rgba(255, 255, 255, 0.1);
 		}
+
+		.project {
+			padding: 30px 1px 20px 85px;
+			display: block;
+			align-items: center;
+		}
+		
+		.title {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 15px;
+			line-height: 20px;
+			padding-left: 50px;
+		}
+		.title:after {
+			display: inline-block;
+		}
+		
+		.project__card img {
+			width: 70vw;
+			height: 45vh;
+		}
+		
+		
+		p {
+			font-size: 12px;
+			padding-right: 40px;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
 		footer {
 			width: auto;
 		}
@@ -334,6 +362,36 @@ width: 60vw;
 		}
 		.about-desk__text {
 			background-color: rgba(255, 255, 255, 0.1);
+		}
+		.project {
+			padding: 30px 0 20px 60px;
+			grid-template-columns: auto auto;
+		grid-gap: 15px 20px;
+		justify-content: center;
+		}
+		
+		.title {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 18px;
+		}
+		.title:after {
+			content: '';
+			margin: 0 auto;
+			display: block;
+			border-radius: 2px;
+			height: 1px;
+			max-width: 400px;
+			background-color: #c5c5c5;
+		}
+		
+		.project__card img {
+			width: 40vw;
+			height: 60vh;
+		}
+		
+		p {
+			font-size: 13px;
+			font-family: Georgia, 'Times New Roman', Times, serif;
 		}
 		footer {
 			width: auto;
