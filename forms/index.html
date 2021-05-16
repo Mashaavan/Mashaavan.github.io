@@ -7,24 +7,24 @@
     <title>Form</title>
   </head>
   <body>
-    <form action="#" method="POST" autocomplete="on">
+    <form action="server.html" method="GET" autocomplete="on">
       <label for="fname">Ваше имя:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
+      <input type="text" id="fname" name="fname" placeholder="Ваше имя"/><br />
 
       <label for="lname">Ваша фамилия:</label><br />
-      <input type="text" id="lname" name="lname" /><br />
+      <input type="text" id="lname" name="lname" placeholder="Ваша фамилия"/><br />
 
       <label for="email">Email</label><br />
-      <input type="email" id="email" name="email" /><br />
+      <input type="email" id="email" name="email" placeholder="Email"/><br />
 
-      <label for="phone">Ваш телефон:</label><br />
-      <input type="phone" id="phone" name="phone" /><br />
+      <label for="phone">Номер телефона:</label><br />
+      <input type="phone" id="phone" name="phone" placeholder="Телефон"/><br />
 
       <label for="text">Бюджет:</label><br />
-      <input type="text" id="budget" name="text" /><br />
+      <input type="text" id="budget" name="text" placeholder="Сумма"/><br />
 
       <label for="text">Площадь:</label><br />
-      <input type="text" id="square" name="text1" /><br />
+      <input type="text" id="square" name="text1" placeholder="м.кв."/><br />
 
       <label for="activity">Вид деятельности:</label>
       <select name="activity" id="activity">
@@ -45,9 +45,11 @@
       <input type="town" name="town" id="town" /><br />
 
       <label for="comments">Комментарий</label><br />
-      <textarea name="comments" id="comments" cols="50" rows="10"></textarea
-      ><br />
-      <button type="button">Отправить</button>
+      <textarea name="comments" id="comments" cols="50" rows="10"></textarea><br />
+		<input type="radio" name="radio">
+		Я согласен с политикой обработки персональных данных <br>
+      <input type="submit" name="submit">
+		<input type="reset" name="reset">
     </form>
   </body>
 </html>
